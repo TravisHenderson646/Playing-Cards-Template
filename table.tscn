@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b4li86om8hgsu"]
+[gd_scene load_steps=7 format=3 uid="uid://b4li86om8hgsu"]
 
 [ext_resource type="Texture2D" uid="uid://c6g35rpd11sy3" path="res://textures/0.tres" id="1_furis"]
 [ext_resource type="Texture2D" uid="uid://cst1wg67luysu" path="res://textures/1.tres" id="2_3rhh7"]
 [ext_resource type="Texture2D" uid="uid://d7bby3c5e40i" path="res://textures/2.tres" id="3_oq1vl"]
 [ext_resource type="Texture2D" uid="uid://4eaixpv3v7vm" path="res://textures/3.tres" id="4_hm0e2"]
 [ext_resource type="Texture2D" uid="uid://c2xoiyqnogx5d" path="res://textures/4.tres" id="5_un4qm"]
+[ext_resource type="PackedScene" uid="uid://bnmq5di16u6ug" path="res://card-pile.tscn" id="6_q886j"]
 
 [node name="Table" type="Node2D"]
 
@@ -14,7 +15,7 @@ texture = ExtResource("1_furis")
 centered = false
 
 [node name="1" type="Sprite2D" parent="."]
-position = Vector2(55, 96)
+position = Vector2(32, 105)
 texture = ExtResource("2_3rhh7")
 centered = false
 
@@ -32,3 +33,6 @@ centered = false
 position = Vector2(98, 72)
 texture = ExtResource("5_un4qm")
 centered = false
+
+[node name="CardPile" parent="." instance=ExtResource("6_q886j")]
+position = Vector2(85, 128)
