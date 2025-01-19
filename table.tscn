@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://b4li86om8hgsu"]
+
+[ext_resource type="Texture2D" uid="uid://c6g35rpd11sy3" path="res://textures/0.tres" id="1_furis"]
+[ext_resource type="Texture2D" uid="uid://cst1wg67luysu" path="res://textures/1.tres" id="2_3rhh7"]
+[ext_resource type="Texture2D" uid="uid://d7bby3c5e40i" path="res://textures/2.tres" id="3_oq1vl"]
+[ext_resource type="Texture2D" uid="uid://4eaixpv3v7vm" path="res://textures/3.tres" id="4_hm0e2"]
+[ext_resource type="Texture2D" uid="uid://c2xoiyqnogx5d" path="res://textures/4.tres" id="5_un4qm"]
+
+[node name="Table" type="Node2D"]
+
+[node name="0" type="Sprite2D" parent="."]
+position = Vector2(73, 36)
+texture = ExtResource("1_furis")
+centered = false
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(55, 96)
+texture = ExtResource("2_3rhh7")
+centered = false
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(47, 51)
+texture = ExtResource("3_oq1vl")
+centered = false
+
+[node name="3" type="Sprite2D" parent="."]
+position = Vector2(112, 42)
+texture = ExtResource("4_hm0e2")
+centered = false
+
+[node name="4" type="Sprite2D" parent="."]
+position = Vector2(98, 72)
+texture = ExtResource("5_un4qm")
+centered = false

@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cqwcsdw6lgvas"]
-
-[ext_resource type="Texture2D" uid="uid://c6g35rpd11sy3" path="res://textures/0.tres" id="1_sh3s3"]
-
-[node name="Tarot-simple" type="Sprite2D"]
-
-[node name="0" type="Sprite2D" parent="."]
-position = Vector2(56, 61)
-texture = ExtResource("1_sh3s3")
