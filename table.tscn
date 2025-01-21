@@ -10,7 +10,7 @@
 [node name="Table" type="Node2D"]
 
 [node name="0" type="Sprite2D" parent="."]
-position = Vector2(73, 36)
+position = Vector2(75, 29)
 texture = ExtResource("1_furis")
 centered = false
 
@@ -20,7 +20,7 @@ texture = ExtResource("2_3rhh7")
 centered = false
 
 [node name="2" type="Sprite2D" parent="."]
-position = Vector2(47, 51)
+position = Vector2(51, 46)
 texture = ExtResource("3_oq1vl")
 centered = false
 
@@ -35,4 +35,4 @@ texture = ExtResource("5_un4qm")
 centered = false
 
 [node name="CardPile" parent="." instance=ExtResource("6_q886j")]
-position = Vector2(85, 128)
+position = Vector2(185, 53)

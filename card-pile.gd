@@ -1,33 +1,28 @@
-extends Area2D
+extends Sprite2D
 
+var card_list:Array = []
 var hovered:bool = false
 var grabbed:bool = false
-var offset:Vector2 = Vector2(0, 0)
+var grab_offset:Vector2 = Vector2(0, 0)
 var tick := 0
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	pass
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	tick += 1
 	if hovered and Input.is_action_just_pressed('left_click'):
 		_grab()
-		print(offset)
 	if grabbed:
-		position = get_viewport().get_mouse_position().floor() + offset
+		position = get_viewport().get_mouse_position().floor() + grab_offset
 		if Input.is_action_just_released('left_click'):
 			grabbed = false
 
 func _grab() -> void:
 	grabbed = true
-	offset = position - get_viewport().get_mouse_position().floor()
+	grab_offset = position - get_viewport().get_mouse_position().floor()
 
-
-func _on_mouse_entered() -> void:
+func _on_area_2d_mouse_entered() -> void:
 	hovered = true
 
-func _on_mouse_exited() -> void:
+func _on_area_2d_mouse_exited() -> void:
 	hovered = false
