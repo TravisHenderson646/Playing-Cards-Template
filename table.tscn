@@ -1,48 +1,39 @@
-[gd_scene load_steps=8 format=3 uid="uid://b4li86om8hgsu"]
+[gd_scene load_steps=3 format=3 uid="uid://b4li86om8hgsu"]
 
-[ext_resource type="Texture2D" uid="uid://c6g35rpd11sy3" path="res://textures/0.tres" id="1_furis"]
-[ext_resource type="Texture2D" uid="uid://cst1wg67luysu" path="res://textures/1.tres" id="2_3rhh7"]
-[ext_resource type="Texture2D" uid="uid://d7bby3c5e40i" path="res://textures/2.tres" id="3_oq1vl"]
-[ext_resource type="Texture2D" uid="uid://4eaixpv3v7vm" path="res://textures/3.tres" id="4_hm0e2"]
-[ext_resource type="Texture2D" uid="uid://c2xoiyqnogx5d" path="res://textures/4.tres" id="5_un4qm"]
 [ext_resource type="PackedScene" uid="uid://bnmq5di16u6ug" path="res://card-pile.tscn" id="6_q886j"]
 [ext_resource type="PackedScene" uid="uid://heiqvv7tiqsm" path="res://card.tscn" id="7_bg56v"]
 
 [node name="Table" type="Node2D"]
 
-[node name="0" type="Sprite2D" parent="."]
-position = Vector2(75, 29)
-texture = ExtResource("1_furis")
-centered = false
-
-[node name="1" type="Sprite2D" parent="."]
-position = Vector2(32, 105)
-texture = ExtResource("2_3rhh7")
-centered = false
-
-[node name="2" type="Sprite2D" parent="."]
-position = Vector2(51, 46)
-texture = ExtResource("3_oq1vl")
-centered = false
-
-[node name="3" type="Sprite2D" parent="."]
-position = Vector2(112, 42)
-texture = ExtResource("4_hm0e2")
-centered = false
-
-[node name="4" type="Sprite2D" parent="."]
-position = Vector2(98, 72)
-texture = ExtResource("5_un4qm")
-centered = false
-
 [node name="CardPile" parent="." instance=ExtResource("6_q886j")]
-position = Vector2(184, 45)
+position = Vector2(125, 37)
 
 [node name="CardPile2" parent="." instance=ExtResource("6_q886j")]
-position = Vector2(152, 65)
+position = Vector2(101, 34)
 
 [node name="Card" parent="." instance=ExtResource("7_bg56v")]
-position = Vector2(95, 137)
+position = Vector2(61, 63)
 
 [node name="Card2" parent="." instance=ExtResource("7_bg56v")]
-position = Vector2(147, 126)
+position = Vector2(89, 61)
+
+[node name="Card3" parent="." instance=ExtResource("7_bg56v")]
+position = Vector2(111, 61)
+
+[node name="Card4" parent="." instance=ExtResource("7_bg56v")]
+position = Vector2(60, 94)
+
+[node name="Card5" parent="." instance=ExtResource("7_bg56v")]
+position = Vector2(87, 95)
+
+[node name="Card6" parent="." instance=ExtResource("7_bg56v")]
+position = Vector2(113, 93)
+
+[node name="Card7" parent="." instance=ExtResource("7_bg56v")]
+position = Vector2(60, 131)
+
+[node name="Card8" parent="." instance=ExtResource("7_bg56v")]
+position = Vector2(87, 132)
+
+[node name="Card9" parent="." instance=ExtResource("7_bg56v")]
+position = Vector2(114, 132)

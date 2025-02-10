@@ -9,7 +9,6 @@ size = Vector2(15, 21)
 [node name="Card" type="Area2D"]
 collision_layer = 2
 collision_mask = 3
-script = ExtResource("2_vexd2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(7.5, 10.5)
@@ -18,8 +17,9 @@ shape = SubResource("RectangleShape2D_ekbab")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_p31nv")
 centered = false
+script = ExtResource("2_vexd2")
 
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
-[connection signal="area_exited" from="." to="." method="_on_area_exited"]
-[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="area_entered" from="." to="Sprite2D" method="_on_area_entered"]
+[connection signal="area_exited" from="." to="Sprite2D" method="_on_area_exited"]
+[connection signal="mouse_entered" from="." to="Sprite2D" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="Sprite2D" method="_on_mouse_exited"]
